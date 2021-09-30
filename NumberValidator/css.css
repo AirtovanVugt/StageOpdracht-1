@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+	border: solid black 3px;
+	width: 500px;
+	text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+h1{
+	grid-column: 1 / 3;
+}
+
+label{
+	grid-column: 1 / 2;
+}
+
+.RightSide{
+	grid-column: 2 / 3;
+}
+
+button{
+	grid-column: 1 / 3;
+}
+
+p:nth-child(odd){
+	grid-column: 1 / 2;	
+}
+
+p:nth-child(even){
+    grid-column: 2 / 3;
+}
